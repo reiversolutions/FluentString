@@ -15,7 +15,7 @@ namespace System
 
         public static bool IsNullOrWhiteSpaceOrDefault(this string text, string defaultString)
         {
-            throw new NotImplementedException();
+            return String.IsNullOrWhiteSpace(text) || text == defaultString;
         }
     }
 }

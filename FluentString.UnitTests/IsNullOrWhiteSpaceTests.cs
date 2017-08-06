@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 namespace FluentString.UnitTests
 {
     [TestClass]
-    public class StringTests
+    public class IsNullOrWhiteSpaceTests
     {
         [TestMethod]
         public void Given_A_NullString_IsNullOrWhiteSpace_Is_True()
