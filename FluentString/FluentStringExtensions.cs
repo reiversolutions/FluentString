@@ -10,7 +10,7 @@ namespace System
     {
         public static bool IsNullOrWhiteSpace(this string text)
         {
-            throw new NotImplementedException();
+            return String.IsNullOrWhiteSpace(text);
         }
 
         public static bool IsNullOrWhiteSpaceOrDefault(this string text, string defaultString)
