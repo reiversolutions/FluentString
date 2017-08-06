@@ -13,6 +13,16 @@ String.IsNullOrWhiteSpace("Test string");
 
 -------------------------------------------------------------------------------
 
+## Install
+
+Install via [Nuget](https://www.nuget.org/packages/FluentString/)
+
+```
+Install-Package FluentString
+```
+
+-------------------------------------------------------------------------------
+
 ## Methods
 
 ### IsNullOrWhiteSpace
