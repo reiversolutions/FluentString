@@ -90,5 +90,33 @@ namespace FluentString.UnitTests
             // Assert
             result.ShouldBe(false);
         }
+
+        [TestMethod]
+        public void Given_A_EmptyGuid_IsNullOrWhiteSpaceOrDefault_Is_True()
+        {
+            // Assign
+            string defaultText = Guid.Empty.ToString();
+            string text = defaultText;
+
+            // Act
+            var result = text.IsNullOrWhiteSpaceOrDefault(defaultText);
+
+            // Assert
+            result.ShouldBe(true);
+        }
+
+        [TestMethod]
+        public void Given_A_NewGuid_IsNullOrWhiteSpaceOrDefault_Is_False()
+        {
+            // Assign
+            string defaultText = Guid.Empty.ToString();
+            string text = Guid.NewGuid().ToString();
+
+            // Act
+            var result = text.IsNullOrWhiteSpaceOrDefault(defaultText);
+
+            // Assert
+            result.ShouldBe(false);
+        }
     }
 }
